@@ -52,7 +52,7 @@ export default async function handler (req: NextApiRequest, res: NextApiResponse
         let salonInsert = await bdd.salon.create({
             data: salonCreate
         });
-        res.status(200).redirect('http://localhost:3000/');
+        res.status(200).redirect('/');
     } else {
         res.status(404);
     }

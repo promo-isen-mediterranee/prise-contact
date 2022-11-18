@@ -38,5 +38,5 @@ input[type="checkbox"]:checked {
     background-color: #003879;
     background-image: url("../public/images/checkmark.png");
     color: #ffffff;
-    border-color: white;
+    border: 3px solid #ffffff;
 }
