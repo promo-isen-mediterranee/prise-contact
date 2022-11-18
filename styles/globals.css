@@ -1,26 +1,42 @@
-html,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    margin: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+select {
+    background-color: #003879;
+    color: #ffffff;
 }
 
-* {
-  box-sizing: border-box;
+option {
+    background-color: #ffffff;
+    color: #003879;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+form {
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #000000;
+    border-radius: 7px!important;
+    background-color: white;
+    padding: 0;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #003879;
+    background-image: url("../public/images/checkmark.png");
+    color: #ffffff;
+    border-color: white;
 }

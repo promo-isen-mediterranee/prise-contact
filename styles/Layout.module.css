@@ -1,0 +1,156 @@
+/*
+ *  Containers
+ */
+
+.containerMain {
+    background-color: #003879;
+}
+
+.header {
+    padding-left: 25px;
+    text-align: left;
+    height: 130px;
+    align-items: center;
+    display: flex;
+    width: 50%;
+    flex-grow: 1;
+}
+
+.headerImg {
+    height: 80px;
+    width: auto;
+    justify-content: center;
+}
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    background-image: url("https://isen-mediterranee.fr/wp-content/uploads/2022/08/traits-bg-accueil.svg");
+    background-position: center center;
+    background-size: cover;
+}
+
+.bg {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+/*
+ *  Flex
+ */
+
+.leftside {
+    width: 50%;
+    color: #ffffff;
+    padding-left: 20.5px;
+}
+
+.rightside {
+    width: 50%;
+    overflow: hidden;
+    background-image: url("https://isen-mediterranee.fr/wp-content/uploads/2022/10/header-home-isen.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*
+ *  Buttons
+ */
+
+.btnPrimary {
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: #ffffff;
+    color: #003879;
+    cursor: pointer;
+    border: 1px solid #ffffff;
+    border-radius: 35px;
+    height: 66px;
+    width: 100px;
+    float: right;
+    margin-right: 23%;
+}
+
+.btnPrimary:hover {
+    background-color: #003879;
+    color: #ffffff;
+}
+
+/*
+ *  Forms
+ */
+
+.inputWrap {
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    margin: 0 20%;
+}
+
+.inputGroup {
+    position: relative;
+    grid-area: input;
+}
+
+.inputLabel {
+    grid-area: label;
+}
+
+.input {
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    padding: 1rem;
+    background-color: #003879;
+    color: white;
+}
+
+.input::placeholder {
+    color: #ffffff;
+}
+
+.select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("https://isen-mediterranee.fr/wp-content/themes/hello-elementor/assets/images/arrow-down.svg");
+    color: #ffffff;
+    background-position-x: 97%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+}
+
+/*
+ * Titles
+ */
+.h1 {
+    margin-left: 15px;
+    text-align: center;
+}
+
+/*
+ * Footer
+ */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+}
+
+/*
+ *  Text
+ */
+
+.txt_center {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: middle;
+}
