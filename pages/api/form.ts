@@ -6,7 +6,6 @@ const bdd = new PrismaClient();
 
 export default async function handler (req: NextApiRequest, res: NextApiResponse) {
     const body = req.body
-    console.log('body: ', body)
 
     if (body.formName == "Contact" && req.method == "POST") {
         let formationsArray: Array<String> = [];
